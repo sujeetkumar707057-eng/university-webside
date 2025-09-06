@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <style>
+            input[type="text"]{
+                position: absolute;
+                left: 180px;
+            }
+        </style>
+    </head>
+    <body style="width: 400px;">
+        <form>
+            <fieldset>
+                Enter registration no <input type="text" placeholder="registration no*" id="t1"><br><br>
+                Enter Name <input type="text" placeholder="Enter name*" id="t2"> <br><br>
+                Enter Fee <input type="text" id="t3"> <br><br>
+                <input type="button" value="Add Recoard">
+                <input type="button" value="Reset">
+                <input type="button" value="Change color"  onclick="disp(1)">
+                <input type="button" value="Change value" onclick="disp(2)">
+            </fieldset>
+        </form>
+        <script>
+            function disp(a)
+            {
+                if(a==1)
+                {
+                  document.getElementById('t1').style.backgroundColor="blue";
+                  document.getElementById('t1').style.Color="white";
+                  v=document.getElementsByTagName('fieldset');
+                  [0].style.backgroundColor="green";
+                }
+                
+               else{  
+                   document.getElementById('t1').value="50002";
+                   document.getElementById('t2').value="Prince";
+
+                   document.getElementById('t3').value="15000";
+
+
+               }
+               
+
+            }
+        </script>
+    </body>
+</html>
